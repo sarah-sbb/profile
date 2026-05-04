@@ -48,6 +48,7 @@ img {
 /**** CLASS ****/
 .container {
   margin: 40px auto;
+  width: 700px;
 }
 
 .card {
