@@ -77,6 +77,8 @@ img {
 }
 
 .list-line {
+  display: flex;
+  gap: 10px;
   text-align: center;
   padding: 0;
 }
