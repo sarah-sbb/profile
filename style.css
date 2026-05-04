@@ -94,7 +94,6 @@ img {
   background-color: #c7c6c6;
   border-radius: 4px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   gap: 10px;
   font-size: 25px;
