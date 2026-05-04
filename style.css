@@ -10,10 +10,9 @@ body {
   color: #575F7D;
   font-family: "Montserrat", sans-serif;
   line-height: 1.5rem;
-  box-sizing: border-box;
 }
 
-h1, h3, a{
+h1, a{
   color: #6B72E1;
   font-weight: bold;
   line-height: 20px;
@@ -26,10 +25,6 @@ h1 {
 h2 {
   color: #7ECE90;
   font-size: 18px;
-}
-
-h3 {
-  font-size: 15px;
 }
 
 a {
@@ -46,12 +41,12 @@ ul, li {
   list-style: none;
 }
 
+img {
+  width: 130px;
+}
+
 /**** CLASS ****/
 .container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 700px;
   margin: 40px auto;
 }
 
@@ -60,14 +55,12 @@ ul, li {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  vertical-align: center;
   gap: 30px;
   padding: 40px;
   text-align: center;
-  width: 100%;
+  margin-bottom: 20px;
 }
 
 .btn-blue {
@@ -75,28 +68,27 @@ ul, li {
   border-radius: 4px;
   color: white;
   padding: 15px 20px;
+  transition: ease-in-out 0.3s;
 }
 
 .btn-blue:hover {
   background-color: black;
-  transition: ease-in-out 0.3s;
 }
 
 .list-line {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+  text-align: center;
   padding: 0;
-  width: 100%;
 }
+/* regarder le cours/exo pour mettre en inline sans flexbox */
 
-.list-line__hash {
+.list-item-hash {
   color: #6B72E1;
+  display: inline-block;
   font-weight: bold;
   font-style: italic;
 }
 
-.list-line__item {
+.list-item {
   align-items: center;
   background-color: #c7c6c6;
   border-radius: 4px;
@@ -106,11 +98,11 @@ ul, li {
   justify-content: center;
   width: 55px;
   text-align: center;
+  transition: ease-in-out 0.3s;
 }
 
-.list-line__item:hover {
+.list-item:hover {
   background-color: black;
-  transition: ease-in-out 0.3s;
 }
 
 /*** RESPONSIVE ***/
@@ -144,8 +136,8 @@ ul, li {
   }
 
   .list-line {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
