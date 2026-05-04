@@ -93,10 +93,9 @@ img {
   align-items: center;
   background-color: #c7c6c6;
   border-radius: 4px;
-  display: flex;
+  display: inline-block;
   font-size: 25px;
   height: 55px;
-  justify-content: center;
   width: 55px;
   text-align: center;
   transition: ease-in-out 0.3s;
